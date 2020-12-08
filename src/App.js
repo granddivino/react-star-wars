@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './Style.css';
+
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+
+import Homepage from './Homepage';
+import Starships from './Starships';
 
 function App() {
+  // set ships array in state to api call data once ( empty [])
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1 className='page-title'>Star Wars Starships</h1>
+    <Router>
+      <div className="App">
+        <Route exact path='/' render={() => <Homepage /> } />
+        <Route path='/starship' render={({location}) => 
+          <Starships location={location}/>
+        }/>
+      </div>
+    </Router>
+    </>
   );
 }
 

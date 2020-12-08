@@ -1,0 +1,52 @@
+
+.page-title {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.ship-container{
+  margin: 100px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  grid-gap: 20px;
+}
+
+.butt {
+  background-color: rgb(52, 122, 43);
+  width: 200px;
+  height: 100px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+  
+}
+
+.ship {
+  text-align: center;
+}
+
+.link-text {
+  text-decoration: none;
+  color: white;
+  line-height: 100px;
+}
+
+.loading {
+  margin: 200px 0 0;
+  text-align: center;
+}
+
+.details {
+  text-align: center;
+  background-color: rgb(52, 122, 43);
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+  margin: 0 auto;
+}
